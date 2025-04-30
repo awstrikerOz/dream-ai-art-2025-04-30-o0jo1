@@ -1,49 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream AI Art - Digital Art and Products</title>
     <meta name="description" content="Transform your ideas into stunning digital art with Dream AI Art">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
     <header x-data="{ isOpen: false }" class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-lg border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <a href="https://awstrikerOz.github.io/dream-ai-art-2025-04-30-o0jo1" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity duration-300">
                     Dream AI Art
-                </div>
+                </a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="hover:text-purple-400 transition-colors duration-300">Features</a>
                     <a href="#benefits" class="hover:text-purple-400 transition-colors duration-300">Benefits</a>
                     <a href="#gallery" class="hover:text-purple-400 transition-colors duration-300">Gallery</a>
+                    <a href="#testimonials" class="hover:text-purple-400 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-purple-400 transition-colors duration-300">About</a>
+                    <a href="#faq" class="hover:text-purple-400 transition-colors duration-300">FAQ</a>
                 </div>
-                <button class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105">
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <button class="hidden md:block bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                     Get Started
                 </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 space-y-4">
+                <a href="#features" class="block py-2 hover:text-purple-400 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block py-2 hover:text-purple-400 transition-colors duration-300">Benefits</a>
+                <a href="#gallery" class="block py-2 hover:text-purple-400 transition-colors duration-300">Gallery</a>
+                <a href="#testimonials" class="block py-2 hover:text-purple-400 transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block py-2 hover:text-purple-400 transition-colors duration-300">About</a>
+                <a href="#faq" class="block py-2 hover:text-purple-400 transition-colors duration-300">FAQ</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="relative min-h-screen flex items-center pt-20">
+        <section class="relative min-h-screen flex items-center pt-20" style="background-image: url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
             <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900"></div>
             <div class="container mx-auto px-6 relative z-10">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-                        Dream AI Art
+                        Transform Your Vision Into Digital Masterpieces
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-300 mb-12">
-                        Digital Art and Products
+                        Harness the power of AI to create stunning artwork in minutes. Perfect for artists, designers, and creative professionals.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105">
-                            Start Creating
+                        <button class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                            Start Creating Now
                         </button>
-                        <button class="bg-transparent border-2 border-purple-500 hover:bg-purple-500/20 px-8 py-4 rounded-full font-medium transition-all duration-300">
-                            Learn More
+                        <button class="bg-transparent border-2 border-purple-500 hover:bg-purple-500/20 px-8 py-4 rounded-full font-medium transition-all duration-300 hover:shadow-lg">
+                            Watch Demo
                         </button>
                     </div>
                 </div>
@@ -52,31 +75,180 @@
 
         <section id="features" class="py-24 bg-gray-800">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Features</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features for Creative Minds</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
                         <div class="h-16 w-16 bg-purple-600 rounded-xl mb-6 flex items-center justify-center">
                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Art</h3>
-                        <p class="text-gray-400">Create stunning digital artwork with our advanced AI tools.</p>
+                        <h3 class="text-xl font-semibold mb-4">Advanced AI Generation</h3>
+                        <p class="text-gray-400">Create professional-quality artwork with our state-of-the-art AI algorithms. Generate unique pieces in seconds.</p>
                     </div>
-                    <!-- Repeat similar cards for Modern, Design, Creation, Development -->
+
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                        <div class="h-16 w-16 bg-purple-600 rounded-xl mb-6 flex items-center justify-center">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Style Customization</h3>
+                        <p class="text-gray-400">Choose from hundreds of artistic styles and customize every aspect of your creation.</p>
+                    </div>
+
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
+                        <div class="h-16 w-16 bg-purple-600 rounded-xl mb-6 flex items-center justify-center">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Batch Processing</h3>
+                        <p class="text-gray-400">Generate multiple variations simultaneously and export in various formats for any use case.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="benefits" class="py-24">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Benefits</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Dream AI Art?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div class="p-8 rounded-2xl bg-gray-800/50 hover:bg-gray-800 transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-4">Quick</h3>
-                        <p class="text-gray-400">Generate artwork in seconds with our powerful AI engine.</p>
+                    <div class="p-8 rounded-2xl bg-gray-800/50 hover:bg-gray-800 transition-all duration-300 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold mb-4">Lightning Fast</h3>
+                        <p class="text-gray-400">Generate professional artwork in seconds, not hours. Save valuable time without compromising quality.</p>
                     </div>
-                    <!-- Repeat for Modern and Engaging -->
+
+                    <div class="p-8 rounded-2xl bg-gray-800/50 hover:bg-gray-800 transition-all duration-300 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold mb-4">Unlimited Creativity</h3>
+                        <p class="text-gray-400">Access thousands of styles and combinations. Your imagination is the only limit.</p>
+                    </div>
+
+                    <div class="p-8 rounded-2xl bg-gray-800/50 hover:bg-gray-800 transition-all duration-300 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold mb-4">Cost-Effective</h3>
+                        <p class="text-gray-400">Premium quality artwork at a fraction of traditional costs. Perfect for businesses of all sizes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Users Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Dream AI Art has revolutionized our design workflow. We've cut our concept art time by 75% while maintaining exceptional quality. The batch processing feature is a game-changer."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Sarah Chen</p>
+                            <p>Creative Director, DesignPro Studios</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The style customization options are incredible. I can create unique pieces for my clients in minutes instead of days. Absolutely worth every penny."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Marcus Thompson</p>
+                            <p>Freelance Digital Artist</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Perfect for our marketing team. We generate social media content and promotional materials at scale. The AI understanding of brand consistency is impressive."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Jessica Rodriguez</p>
+                            <p>Marketing Manager, TechFlow Inc</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 p-8 rounded-2xl hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"As an indie game developer, this tool has been invaluable. The batch processing feature helps me create entire asset sets quickly."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Alex Kowalski</p>
+                            <p>Independent Game Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Dream AI Art</h2>
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-gray-300 mb-8">
+                        Founded in 2022 by a team of artists and AI researchers, Dream AI Art emerged from a vision to democratize digital art creation. What started as a small experiment in AI-powered creativity has grown into a powerful platform used by thousands of professionals worldwide.
+                    </p>
+                    <p class="text-gray-300">
+                        Our mission is to empower creators with cutting-edge AI technology while maintaining the human touch in digital art. We believe in sustainable innovation, ethical AI practices, and fostering a community where creativity knows no bounds. Our core values of accessibility, innovation, and quality drive everything we do.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-gray-900 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">How does the AI art generation process work?</h3>
+                        <p class="text-gray-400">Our AI uses advanced machine learning algorithms to analyze millions of artworks and generate new pieces based on your input. You can specify styles, themes, and other parameters to guide the creation process.</p>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">What file formats are supported for export?</h3>
+                        <p class="text-gray-400">We support all major file formats including PNG, JPEG, SVG, and PSD. Premium users can also access layered files and higher resolutions.</p>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Do I own the rights to the generated artwork?</h3>
+                        <p class="text-gray-400">Yes, all artwork generated through our platform belongs to you and includes full commercial usage rights. You're free to use, modify, and sell the generated content.</p>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Is there a limit to how many images I can generate?</h3>
+                        <p class="text-gray-400">Free accounts can generate up to 20 images per day. Premium subscriptions offer unlimited generations and priority processing.</p>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Can I use the service for commercial projects?</h3>
+                        <p class="text-gray-400">Absolutely! Our platform is designed for both personal and commercial use. Many businesses use our service for marketing, product design, and content creation.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -87,22 +259,68 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h4 class="text-xl font-bold mb-4">Dream AI Art</h4>
-                    <p class="text-gray-400">Transform your ideas into stunning digital art.</p>
+                    <p class="text-gray-400">Transform your ideas into stunning digital art with the power of AI.</p>
                 </div>
                 <div>
-                    <h4 class="text-xl font-bold mb-4">Links</h4>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">About</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Features</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">About</a></li>
                     </ul>
                 </div>
-                <!-- Add more footer columns -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://awstrikerOz.github.io/dream-ai-art-2025-04-30-o0jo1/privacy.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://awstrikerOz.github.io/dream-ai-art-2025-04-30-o0jo1/terms.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://awstrikerOz.github.io/dream-ai-art-2025-04-30-o0jo1/blog.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">FAQ</a></li>
+                        <li><a href="#support" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Support</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
                 <p>&copy; 2024 Dream AI Art. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
